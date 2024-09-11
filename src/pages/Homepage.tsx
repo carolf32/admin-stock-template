@@ -34,11 +34,7 @@ export const Homepage = () => {
           >
             Register new product
           </a>
-          {isRegisterProductModalOpen ? (
-            <RegisterProductModal
-              setIsRegisterProductModalOpen={setIsRegisterProductModalOpen}
-            />
-          ) : null}
+          {isRegisterProductModalOpen ? <RegisterProductModal /> : null}
           <a className="bg-gray-200 font-semibold p-2 rounded">
             <CgLogOff
               size={23}
